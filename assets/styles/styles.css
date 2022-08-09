@@ -30,7 +30,7 @@ header p {
 }
 
 .container{
-    width: calc(100% - 77px);
+    width: calc(100% - 154px);
     margin: 0 auto;
 }
 .container .content{
@@ -101,15 +101,17 @@ footer p,a{
     header{
         margin-top: 20px;
         margin-left: 24px;
+        margin-bottom: 64px;
     }
     .container{
-        width: calc(100% - 24px);
+        width: calc(100% - 48px);
         margin: 0 auto;
     }
     .container .content{
         display: flex;
         width: 100%;
         flex-direction: column;
+        margin-bottom: 114px;
     }
 
     .container .content .content-image{
@@ -121,5 +123,24 @@ footer p,a{
     .container .content .content-text{
         width: 100%;
         margin: 0 auto;
+    }
+
+    footer{
+        margin-left: 24px;
+    }
+
+    footer p{
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .container .content .content-text h4{
+        font-size: 48px;
+        line-height: 71px;
+    }
+    .container .content .content-text p{
+        font-size: 18px;
+        line-height: 27px;
     }
 }
